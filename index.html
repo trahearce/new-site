@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,">
     <title>トップページ</title>
     <link rel="stylesheet" href="top.css">
   </head>
@@ -43,11 +43,17 @@
     </header>
 
     <main>
-      <img src="Photo/image.png" alt="イメージ図" class="image_1">
-      <img src="Photo/image.png" alt="イメージ図" class="image_2">
+      <div class="image-photo_1">
+      <img src="Photo/image.png" alt="イメージ図1">
+      </div>
+
+      <div class="image-photo_2">
+      <img src="Photo/image.png" alt="イメージ図2">
+      </div>
+
       <section>
 
-        <h1 class="brand" id="about-trahearce">About</h1>
+        <h1 class="brand" id="about-trahearce">about</h1>
         <P class="egg">跳ぶたびに感じる、あの ”ふわっ” とした幸せを、<br>
         もっとたくさんの人に知ってほしい。<br>
         だから、trahearceは生まれました。<br>
@@ -59,25 +65,25 @@
         </P>
 
         <div class="brand-photo-wrapper">
-          <img src="Photo/image.png" alt="ブランド写真" class="brand-photo">
+          <img src="Photo/image.png" alt="ブランド写真">
         </div>
 
       </section>
       <section>
 
         <div class="topic-wrapper">
-          <h1 class="topic" id="topic">Topic</h1>
+          <h1 class="topic" id="topic">topic</h1>
           <ul class="topic-list">
-            <li>[ 2025/11/09 ]  西山公園体育館にて「市長杯」が開催されます。</li>
-            <li>[ 2025/11/20 ]  西山公園体育館にて、バッグのお披露目会を行います。</li>
-            <li>[ 2026/02/07 ]  京都芸術大学にて、行われる卒業展・修了展に作品を展示します。</li>
+            <li>[ 2025/11/09 ]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;西山公園体育館にて「市長杯」が開催されます。</li>
+            <li>[ 2025/11/20 ]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;西山公園体育館にて、バッグのお披露目会を行います。</li>
+            <li>[ 2026/02/07 ]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;京都芸術大学にて、行われる卒業展・修了展に作品を展示します。</li>
           </ul>
         </div>
 
       </section>
       <section>
 
-        <h1 class="products" id="products">Products</h1>
+        <h1 class="products" id="products">products</h1>
 
         <div class="list-grid">
           <div class="list">
@@ -131,7 +137,7 @@
       </section>
 
       <!--
-      
+
       <section>
         
         <h1 class="trampoline" id="about-trampoline">Column</h1><br>
@@ -188,7 +194,7 @@
             <!-- 兵庫ラベル -->
               <div class="Hyogo-label" style="top: 33%; left: 35%;" onclick="showPopup('兵庫')">兵庫</div>
 
-          　<!-- 三重ラベル -->
+            <!-- 三重ラベル -->
               <div class="Mie-label" style="top: 49%; left: 65%;" onclick="showPopup('三重')">三重</div>
 
             <!-- 和歌山ラベル -->
@@ -200,16 +206,12 @@
                   <div class="popup-row" id="popup-content">
 
                 <script src="header.js"></script>
-                  <div class="more-button-area">
-                    <button class="more-button">and more</button>
-                  </div>
         </div>
 
       </section>
     
     </main>
 
-  </body>
 <section>
 
         <footer class="site-footer">
@@ -237,5 +239,7 @@
         </footer>
 
       </section>  
+
+  </body>
 
 </html>

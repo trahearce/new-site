@@ -2,6 +2,11 @@
 html {
     font-size: 62.5%; /* 1rem = 10px に統一 */
     scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 header {
@@ -14,9 +19,17 @@ footer {
   border-top: 0.35rem solid #c9c9c9; /* 薄いグレーの線 */
   padding-top: 1rem;          /* 下に少し余白 */
   margin-top: 1rem;           /* 本文との間隔 */
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);     /* コンテンツ幅の中央から左にずらす */
+  width: 100%;
+  margin: 0 auto;
+  max-width: 100%;
 }
+
+ /* 画像のはみ出し防止 */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
 
 /* ヘッダー */
 .fixed-header {
@@ -63,7 +76,6 @@ footer {
   cursor: pointer; /*カーソルを当てるとマウスアイコンが変わる*/
 }
 
-
 .menu-label span {
   background: #333;
   height: 0.2rem;
@@ -85,7 +97,6 @@ footer {
   position: absolute;
   top: 1.2rem;
 }
-
 
 /* 右から出るメニュー */
 .nav {
@@ -131,7 +142,7 @@ footer {
 }
 
 .small {
-  margin-top: 27rem;
+  margin-top: 15rem;
 }
 
 .nav-sub a {
@@ -174,16 +185,30 @@ footer {
   scroll-margin-top: 10rem; /* ヘッダーの高さに合わせて調整 */
 }
 
-
 /*イラスト予定*/
-.image_1 {
-  width: calc(100% - 6rem);
+.image-photo_1 {
+  text-align: center;
+}
+
+.image-photo_1 img {
+  width: 80%;
   height: auto;
   display: block;
-  margin: 0 7rem;
+  margin: 0 auto;
+  object-fit: contain;
   margin-top: 12.85rem;
   margin-bottom: 10rem;
 }
+
+.image-photo_2 img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
+  margin-bottom: 10rem;
+}
+
 
 .image_2 {
   width: 100%;
@@ -198,7 +223,7 @@ footer {
 .trampoline,
 .map-title {
   padding: 0 7rem;
-  font-size: 5rem;
+  font-size: 3rem;
 }
 
 /* trahearceの説明 */
@@ -236,14 +261,13 @@ footer {
   font-size: 2rem;
   margin: 0;
   padding-top: 3rem;
-  padding-left: 47rem;
+  padding-left: 10rem;
   padding-bottom: 10rem;
   list-style: none;
-  padding-left: 0;
 }
 
 .topic-list li {
-  margin-bottom: 0.8rem;
+  margin-bottom: 1.5rem;
 }
 
 /* 最初の項目だけ Topic と高さを揃えて横並びに見せる */
@@ -300,7 +324,7 @@ footer {
 }
 
 .more-button {
-  background-color: #f7c87d;
+  background-color: #f6ab00; 
   color: #333;
   border: none;
   padding: 12px 48px;
@@ -379,13 +403,6 @@ footer {
 .popup-item {
   width: 100rem;
   text-align: center;
-}
-
-.popup-item img {
-  width: 100%;
-  height: auto;
-  border-radius: 0.6rem;
-  box-shadow: 0 0.2rem 0.6rem rgba(0,0,0,0.1);
 }
 
 .label {
@@ -472,6 +489,3 @@ figure {
   color: #333;
   margin-top: 9rem; /* 上のセクションとの余白 */
 }
-
-
-
