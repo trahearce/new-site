@@ -305,6 +305,7 @@ main {
 .counter .plus {
   background-color: #FFFFFF;
   width: 50px;
+  color: #333;
 }
 
 .cart {
@@ -313,4 +314,5 @@ main {
   color: #FFFFFF;
   border: none;
   cursor: pointer;
+  font-size: 13px;
 }
