@@ -267,4 +267,50 @@ main {
 
 .item_explanation {
   line-height: 1.8;
+  margin-bottom: 3.5rem;
+}
+
+.product {
+  display: flex;          /* 横並びにする */
+  align-items: center;    /* 縦位置を揃える */
+  gap: 35px;              /* ボタンとの間隔 */
+  margin-top: 5rem;
+}
+
+.counter {
+  display: inline-flex;
+  align-items: center;
+  border: 3px solid #333;
+  overflow: hidden;
+  
+}
+
+.counter button {
+  width: 80px;
+  height: 30px;
+  border: none;
+  background: #FFFFFF;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.counter input {
+  width: 100px;
+  text-align: center;
+  border: none;
+  font-size: 18px;
+}
+
+.counter .minus ,
+.counter .plus {
+  background-color: #FFFFFF;
+  width: 50px;
+}
+
+.cart {
+  padding: 10px 101px;
+  background-color: #3f3d3d;
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
 }
