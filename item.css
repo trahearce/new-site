@@ -273,7 +273,7 @@ main {
 .product {
   display: flex;          /* 横並びにする */
   align-items: center;    /* 縦位置を揃える */
-  gap: 35px;              /* ボタンとの間隔 */
+  gap: 49px;              /* ボタンとの間隔 */
   margin-top: 5rem;
 }
 
@@ -309,10 +309,10 @@ main {
 }
 
 .cart {
-  padding: 10px 101px;
+  padding: 10px 80px;
   background-color: #3f3d3d;
   color: #FFFFFF;
   border: none;
   cursor: pointer;
-  font-size: 13px;
+  font-size: 17px;
 }
