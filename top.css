@@ -178,6 +178,7 @@ footer {
 
 /* メニューのすべての商品押下で遷移 */
 #about-trahearce,
+#brand,
 #topic,
 #products,
 #about-trampoline,
@@ -185,84 +186,121 @@ footer {
   scroll-margin-top: 10rem; /* ヘッダーの高さに合わせて調整 */
 }
 
-/*イラスト予定*/
-.image-photo_1 {
-  text-align: center;
-}
-
-.image-photo_1 img {
-  width: 80%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-  object-fit: contain;
-  margin-top: 12.85rem;
-  margin-bottom: 10rem;
-}
-
-.image-photo_2 img {
+/*イラスト*/
+.top-image {
   width: 100%;
   height: auto;
   display: block;
   margin: 0 auto;
   object-fit: contain;
+  margin-top: 7.85rem;
   margin-bottom: 10rem;
-}
-
-
-.image_2 {
-  width: 100%;
-  height: auto;
-  display: block;
 }
 
 /* 各タイトル */
+.about,
 .brand,
-.topic,
 .products,
-.trampoline,
 .map-title {
-  padding: 0 7rem;
-  font-size: 3rem;
+  display: inline-block;
+  padding: 1rem 7rem;
+  font-size: 2.5rem;
+  color: #FFFFFF;
+  background-color: #3EB370; /* 緑のバー */
+  border-top-right-radius: 40px;   /* 右上を丸く */
+  border-bottom-right-radius: 40px;/* 右下を丸く */
+}
+
+.topic {
+  display: inline-block;
+  padding: 1rem 7rem;
+  margin-top: 4rem;
+  font-size: 2.5rem;
+  color: #3EB370;
+  background-color: #FFFFFF; /* 緑のバー */
+  border-top-right-radius: 40px;   /* 右上を丸く */
+  border-bottom-right-radius: 40px;/* 右下を丸く */
+}
+
+.about-setting {
+  color: #3EB370;
+  margin-left: 25rem;
+  line-height: 2;
+}
+
+.about-title {
+  font-size: 4.5rem;
 }
 
 /* trahearceの説明 */
-.egg {
-  text-align: center;
-  line-height: 2.3;
-  font-size: 2rem;
+.about-a {
+  font-size: 2.5rem;
   margin-top: 5rem;
 }
 
-/* trahearceの写真 */
-.brand-photo-wrapper {
-  text-align: center;
-  margin: 8rem 0;
+.about-b {
+  font-size: 2.5rem;
+  margin-top: 4rem;
 }
 
-.brand-photo-wrapper img {
-  width: 70%;
+.about-set {
+  display: flex;
+  gap: 14rem;
+}
+
+.about-c {
+  font-size: 2.5rem;
+  margin-top: 4rem;
+}
+
+.image-2 {
+  width: 30%;
   height: auto;
-  display: block;
-  margin: 0 auto;
-  object-fit: contain;
+}
+
+.brand-setting {
+  display: flex;
+}
+
+.image-3 {
+  width: 40%;
+  height: auto;
+  align-self: center; 
+}
+
+.brand-set {
+  display: flex;
+  flex-direction: column; /* テキストを縦積み */
+  color: #3EB370;
+}
+
+.brand-a,
+.brand-b,
+.brand-c,
+.brand-d,
+.brand-e,
+.brand-f {
+  font-size: 2.5rem;
+  line-height: 2;
+  margin-top: 0;
 }
 
 .topic-wrapper {
   display: flex;
   align-items: flex-start;
   gap: 2rem;
-  background-color: #f5f5f5;
+  background-color: #3EB370;
+  margin-bottom: 10rem;
+  margin-top: 5rem;
 }
 
 .topic-list {
   list-style-type: disc;
   list-style-position: inside;
-  font-size: 1.7rem;
+  font-size: 2.5rem;
+  color: #FFFFFF;
   margin: 0;
-  padding-top: 3rem;
-  padding-left: 30rem;
-  padding-bottom: 10rem;
+  padding: 5rem 0 5rem 3rem;
   list-style: none;
 }
 
@@ -279,7 +317,8 @@ footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 横3列 */
   gap: 2rem; /* カード間の余白 */
-  padding: 0 7rem;
+  padding: 4rem;
+  padding-top: 0;
 }
 
 .list {
@@ -297,10 +336,11 @@ footer {
 }
 
 .list img {
-  display: inline-block;
-  width: 70%;
-  height: auto;
+  width: 300px;
+  height: 300px;
   border-radius: 0.4rem;
+  display: block;       /* ← これ重要 */
+  margin: 5rem auto 3rem auto;       /* ← 左右中央寄せ */
 }
 
 .text h4 {
@@ -308,24 +348,18 @@ footer {
   font-size: 1.1em;
 }
 
-.text p {
-  margin: 0;
-  margin-bottom: 2rem; /* ← 下に20pxの余白 */
-  font-size: 0.95em;
-  color: #333;
-}
-
 .more-button-area {
+  position: relative;       /* 子要素の絶対配置の基準にする */
+  width: 100%;
+  height: 20vh;            /* 画面全体の高さを使う場合 */
   display: flex;
   justify-content: center;   /* 横方向中央揃え */
   align-items: center;       /* 高さ方向中央揃え（任意） */
-  margin: 40px 0;
-  width: 100%;               /* 念のため幅を指定 */
 }
 
 .more-button {
   background-color: #f6ab00; 
-  color: #333;
+  color: #FFFFFF;
   border: none;
   padding: 16px 48px;
   font-size: 1.5em;
@@ -338,8 +372,104 @@ footer {
   background-color: #d6b380e7;
 }
 
+.image-4 {
+  width: 25%;
+  height: auto;
+  position: absolute;   /* ボタンを基準に配置 */
+  left: 65%;            /* ボタンの右側にずらす */
+  top: 150%; 
+  transform: translateY(-50%); /* 縦方向の中央揃え */
+}
 
+.column-setting {
+  background-color: #3EB370;
+  color: #FFFFFF;
+  padding-bottom: 7rem;
+  margin-top: 10rem;
+}
 
+.trampoline {
+  display: inline-block;
+  padding: 1rem 7rem;
+  margin: 10rem 0;
+  font-size: 2.5rem;
+  color: #3EB370;
+  background-color: #FFFFFF; /* 緑のバー */
+  border-top-right-radius: 40px;   /* 右上を丸く */
+  border-bottom-right-radius: 40px;/* 右下を丸く */
+}
+
+.trampoline-peach,
+.trampoline-orange {
+  float: left;
+  width: 38%;
+  height: auto;
+  padding-left: 7rem;
+  padding-right: 11rem;
+  margin-top: 1rem;
+  margin-bottom: 10rem;
+}
+
+.trampoline-apple {
+  float: right;
+  width: 38%;
+  height: auto;
+  padding-left: 10rem;
+  padding-right: 6rem;
+  margin-bottom: 10rem;
+}
+
+.column-A,
+.column-C {
+  font-size: 4rem ;
+  margin: 0;
+  margin-left: 67rem;
+}
+
+.column-B {
+  font-size: 4rem ;
+  margin: 0;
+  margin-top: 10rem;
+  padding-left: 7rem;
+}
+
+.column-a,
+.column-c {
+  font-family: monospace;
+  font-size: 2.2rem;
+  line-height: 1.6;
+  padding-top: 1rem;
+}
+
+.column-b {
+  font-family: monospace;
+  font-size: 2.2rem;
+  line-height: 1.6;
+  padding-top: 1rem;
+  margin-left: 7rem;
+}
+
+.image-row {
+  display: grid;
+  gap: 0rem; /* 画像の間隔 */
+  justify-items: center; /* 各アイテムを中央に */
+  justify-content: center; /* 中央揃え（任意） */
+  margin-top: 15rem;
+  margin-bottom: 10rem;
+  grid-template-columns: repeat(3, 1fr); /* 横3列 */
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.column-image {
+  width: 80%;
+  height: auto;
+}
+
+.column-text {
+  font-size: 1.5rem;
+  margin-bottom: 10rem;
+}
 
 
 
