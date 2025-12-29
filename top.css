@@ -207,6 +207,8 @@ footer {
   font-size: 2.5rem;
   color: #FFFFFF;
   background-color: #3EB370; /* 緑のバー */
+  font-family: Arial, sans-serif;
+  font-weight: bold;
   border-top-right-radius: 40px;   /* 右上を丸く */
   border-bottom-right-radius: 40px;/* 右下を丸く */
 }
@@ -218,12 +220,16 @@ footer {
   font-size: 2.5rem;
   color: #3EB370;
   background-color: #FFFFFF; /* 緑のバー */
+  font-family: Arial, sans-serif;
+  font-weight: bold;
   border-top-right-radius: 40px;   /* 右上を丸く */
   border-bottom-right-radius: 40px;/* 右下を丸く */
 }
 
 .about-setting {
   color: #3EB370;
+  font-family: "Yu Gothic", "YuGothic", sans-serif;
+  font-weight: 500;
   margin-left: 25rem;
   line-height: 2;
 }
@@ -260,6 +266,8 @@ footer {
 
 .brand-setting {
   display: flex;
+  font-family: "Yu Gothic", "YuGothic", sans-serif;
+  font-weight: 500;
 }
 
 .image-3 {
@@ -302,6 +310,8 @@ footer {
   margin: 0;
   padding: 5rem 0 5rem 3rem;
   list-style: none;
+  font-family: "Yu Gothic", "YuGothic", sans-serif;
+  font-weight: 500;
 }
 
 .topic-list li {
@@ -346,6 +356,8 @@ footer {
 .text h4 {
   margin: 1rem 0 0.5rem;
   font-size: 1.1em;
+  font-family: "Yu Gothic", "YuGothic", sans-serif;
+  font-weight: 500;
 }
 
 .more-button-area {
@@ -366,6 +378,8 @@ footer {
   border-radius: 2.5rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
 }
 
 .more-button:hover {
@@ -379,13 +393,18 @@ footer {
   left: 65%;            /* ボタンの右側にずらす */
   top: 150%; 
   transform: translateY(-50%); /* 縦方向の中央揃え */
+  z-index: 99; /* 数字が大きいほど前に来る */
 }
 
 .column-setting {
+  position: relative;
   background-color: #3EB370;
   color: #FFFFFF;
-  padding-bottom: 7rem;
   margin-top: 10rem;
+  padding-bottom: 20rem;
+  margin-bottom: 20rem;
+  font-family: "Yu Gothic", "YuGothic", sans-serif;
+  font-weight: 500;
 }
 
 .trampoline {
@@ -395,6 +414,8 @@ footer {
   font-size: 2.5rem;
   color: #3EB370;
   background-color: #FFFFFF; /* 緑のバー */
+  font-family: Arial, sans-serif;
+  font-weight: bold;
   border-top-right-radius: 40px;   /* 右上を丸く */
   border-bottom-right-radius: 40px;/* 右下を丸く */
 }
@@ -456,7 +477,6 @@ footer {
   justify-items: center; /* 各アイテムを中央に */
   justify-content: center; /* 中央揃え（任意） */
   margin-top: 15rem;
-  margin-bottom: 10rem;
   grid-template-columns: repeat(3, 1fr); /* 横3列 */
   margin-left: 3rem;
   margin-right: 3rem;
@@ -467,9 +487,21 @@ footer {
   height: auto;
 }
 
-.column-text {
+.column-text1 {
   font-size: 1.5rem;
   margin-bottom: 10rem;
+}
+
+.column-text2 {
+  position: relative;
+  font-size: 1.5rem;
+}
+
+.image-5 {
+  position: absolute;
+  width: 40%;
+  height: auto;
+  left: 4%;
 }
 
 
@@ -486,7 +518,6 @@ footer {
   width: 100%;
   margin: 0 auto;
   display: block;
-  padding-bottom: 7rem;
   padding-top: 3rem;
 }
 
@@ -569,6 +600,17 @@ figure {
   padding: 0;
 }
 
+.parent {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.image-6 {
+  width: 30%;
+  height: auto;
+  margin-right: 10rem;
+}
+
 /* フッター */
 .site-footer {
   background-color: #FFFFFF;
@@ -619,5 +661,4 @@ figure {
   font-size: 1.4rem;
   color: #333;
   margin-top: 9rem; /* 上のセクションとの余白 */
-
 }
