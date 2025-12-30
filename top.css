@@ -276,7 +276,6 @@ footer {
 .brand-set {
   display: flex;
   flex-direction: column; /* テキストを縦積み */
-  font-family: monospace;
   color: #3EB370;
 }
 
@@ -287,6 +286,7 @@ footer {
 .brand-e,
 .brand-f {
   font-size: 2.5rem;
+  font-family: monospace;
   line-height: 2;
   margin-top: 0;
 }
