@@ -11,6 +11,10 @@ body {
   overflow-x: hidden;
 }
 
+main {
+  background-color: #fdfcf8;
+}
+
 
 /*　削除予定
 
@@ -150,7 +154,7 @@ footer {
 }
 
 .small {
-  margin-top: 15rem;
+  margin-top: 20rem;
 }
 
 .nav-sub a {
@@ -316,7 +320,7 @@ footer {
 .topic-list {
   list-style-type: disc;
   list-style-position: inside;
-  font-size: 2rem;
+  font-size: 2.3rem;
   color: #FFFFFF;
   margin: 0;
   padding: 5rem 0 5rem 3rem;
@@ -387,7 +391,7 @@ footer {
   border: none;
   padding: 16px 48px;
   font-size: 2em;
-  border-radius: 2.5rem;
+  border-radius: 3rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
   font-family: Arial, sans-serif;
@@ -452,11 +456,9 @@ footer {
   margin-bottom: 10rem;
 }
 
-.column-A,
-.column-C {
+.column-A {
   font-size: 4rem ;
   margin: 0;
-  margin-left: 67rem;
 }
 
 .column-B {
@@ -466,8 +468,12 @@ footer {
   padding-left: 7rem;
 }
 
-.column-a,
-.column-c {
+.column-C {
+  font-size: 4rem ;
+  margin-top: 5rem;
+}
+
+.column-a {
   font-family: monospace;
   font-size: 2.2rem;
   line-height: 1.6;
@@ -481,6 +487,14 @@ footer {
   padding-top: 1rem;
   margin-left: 7rem;
 }
+
+.column-c {
+  font-family: monospace;
+  font-size: 2.2rem;
+  line-height: 1.6;
+  padding-top: 1rem;
+}
+
 
 .image-row {
   clear: both;
