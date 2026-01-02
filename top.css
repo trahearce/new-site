@@ -37,11 +37,16 @@ footer {
 
 
  /* 画像のはみ出し防止 */
-  img {
+img {
     max-width: 100%;
     height: auto;
     display: block;
-  }
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+ }
 
 /* ヘッダー */
 .fixed-header {
@@ -189,12 +194,12 @@ footer {
 }
 
 /* メニューのすべての商品押下で遷移 */
-#about-trahearce,
-#brand,
-#topic,
-#products,
-#about-trampoline,
-#place-trampoline {
+#about-top,
+#brand-top,
+#topic-top,
+#products-top,
+#column-top,
+#kansai-top {
   scroll-margin-top: 10rem; /* ヘッダーの高さに合わせて調整 */
 }
 
@@ -213,18 +218,17 @@ footer {
 .about,
 .brand,
 .products,
-.map-title {
+.kansai {
   display: inline-block;
   padding: 1rem 7rem;
   font-size: 2.5rem;
   color: #FFFFFF;
   background-color: #3EB370; /* 緑のバー */
-  font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif; /*フォント設定*/
   font-weight: bold;
   border-top-right-radius: 40px;   /* 右上を丸く */
   border-bottom-right-radius: 40px;/* 右下を丸く */
 }
-
 
 .about-setting {
   color: #3EB370;
@@ -259,14 +263,14 @@ footer {
   margin-top: 2rem;
 }
 
-.image-2 {
+.image-1 {
   width: 30%;
   height: auto;
 }
 
 .brand-setting {
   display: flex;
-  font-family: "Yu Gothic", "YuGothic", sans-serif;
+  font-family: "Yu Gothic", "YuGothic", sans-serif; /*フォント設定*/
   font-weight: 500;
 }
 
@@ -295,6 +299,15 @@ footer {
   margin-top: 0;
 }
 
+.topic-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  background-color: #3EB370;
+  margin-bottom: 10rem;
+  margin-top: 5rem;
+}
+
 .topic {
   display: inline-block;
   padding: 1rem 7rem;
@@ -306,15 +319,6 @@ footer {
   font-weight: bold;
   border-top-right-radius: 40px;   /* 右上を丸く */
   border-bottom-right-radius: 40px;/* 右下を丸く */
-}
-
-.topic-wrapper {
-  display: flex;
-  align-items: flex-start;
-  gap: 2rem;
-  background-color: #3EB370;
-  margin-bottom: 10rem;
-  margin-top: 5rem;
 }
 
 .topic-list {
@@ -368,7 +372,7 @@ footer {
   margin: 5rem auto 3rem auto;       /* ← 左右中央寄せ */
 }
 
-.text h4 {
+.list-text h4 {
   margin: 1rem 0 0.5rem;
   font-size: 2em;
   color: #f6ab00;
@@ -376,7 +380,8 @@ footer {
   font-weight: 500;
 }
 
-.more-button-area {
+/*オンラインショップボタン*/
+.shop-button-area {
   position: relative;       /* 子要素の絶対配置の基準にする */
   width: 100%;
   height: 20vh;            /* 画面全体の高さを使う場合 */
@@ -385,7 +390,7 @@ footer {
   align-items: center;       /* 高さ方向中央揃え（任意） */
 }
 
-.more-button {
+.shop-button {
   background-color: #f6ab00; 
   color: #FFFFFF;
   border: none;
@@ -398,7 +403,7 @@ footer {
   font-weight: bold;
 }
 
-.more-button:hover {
+.shop-button:hover {
   background-color: #d6b380e7;
 }
 
@@ -423,7 +428,7 @@ footer {
   font-weight: 500;
 }
 
-.trampoline {
+.column {
   display: inline-block;
   padding: 1rem 7rem;
   margin: 10rem 0;
@@ -436,8 +441,8 @@ footer {
   border-bottom-right-radius: 40px;/* 右下を丸く */
 }
 
-.trampoline-peach,
-.trampoline-orange {
+.column-photo1,
+.column-photo3 {
   float: left;
   width: 38%;
   height: auto;
@@ -447,7 +452,7 @@ footer {
   margin-bottom: 10rem;
 }
 
-.trampoline-apple {
+.column-photo2 {
   float: right;
   width: 38%;
   height: auto;
@@ -461,23 +466,18 @@ footer {
   margin: 0;
 }
 
-.column-B {
-  font-size: 4rem ;
-  margin: 0;
-  margin-top: 10rem;
-  padding-left: 7rem;
-}
-
-.column-C {
-  font-size: 4rem ;
-  padding-top: 5rem;
-}
-
 .column-a {
   font-family: monospace;
   font-size: 2.2rem;
   line-height: 1.6;
   padding-top: 1rem;
+}
+
+.column-B {
+  font-size: 4rem ;
+  margin: 0;
+  margin-top: 10rem;
+  padding-left: 7rem;
 }
 
 .column-b {
@@ -488,13 +488,17 @@ footer {
   margin-left: 7rem;
 }
 
+.column-C {
+  font-size: 4rem ;
+  padding-top: 5rem;
+}
+
 .column-c {
   font-family: monospace;
   font-size: 2.2rem;
   line-height: 1.6;
   padding-top: 1rem;
 }
-
 
 .image-row {
   clear: both;
@@ -529,8 +533,6 @@ footer {
   height: auto;
   left: 4%;
 }
-
-
 
 .map {
   position: relative;
@@ -593,6 +595,7 @@ footer {
   text-align: center;
 }
 
+/*Jsの設定*/
 .label {
   font-size: 1.4rem;
   font-weight: bold;
@@ -600,12 +603,14 @@ footer {
   margin-top: 0.6rem;
 }
 
+/*破棄予定　前のJSの設定
 #popup-title {
   margin-top: 0.8rem;
   font-size: 1.5rem;
   font-weight: bold;  
   text-align: center;
 }
+*/
 
 /*×ボタン設定*/
 .close-btn {
@@ -619,11 +624,6 @@ footer {
 
 .close-btn:hover {
   color: #000;
-}
-
-figure {
-  margin: 0;
-  padding: 0;
 }
 
 .parent {
@@ -648,6 +648,12 @@ figure {
   font-weight: bold;
 }
 
+.footer-content {
+  display: flex;
+  align-items: flex-start; /* 上寄せ */
+  gap: 15rem ; /* ロゴとリンク群の間隔 */
+}
+
 .footer-links,
 .footer-information {
   list-style: none;
@@ -657,12 +663,6 @@ figure {
   gap: 1rem;
   margin: 0;
   padding: 0;
-}
-
-.footer-content {
-  display: flex;
-  align-items: flex-start; /* 上寄せ */
-  gap: 15rem ; /* ロゴとリンク群の間隔 */
 }
 
 .footer-links a {
