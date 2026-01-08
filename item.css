@@ -240,7 +240,8 @@ main {
   border: 2px solid transparent;
 }
 
-.subImage img:hover {
+.subImage img:hover,
+.subImage img:first-child {
   border-color: #333;
 }
 
