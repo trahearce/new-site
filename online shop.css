@@ -360,7 +360,8 @@ footer {
   font-size: 4.5rem;
 }
 
-.campaign-a {
+.campaign-a,
+.campaign-b {
   font-size: 2.5rem; 
 }
 
