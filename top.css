@@ -289,9 +289,9 @@ figure {
 .brand-c,
 .brand-d,
 .brand-e,
-.brand-f {
-  font-size: 2.5rem;
+.brand-f { 
   font-family: monospace;
+  font-size: 2.5rem;
   line-height: 2;
   margin-top: 0;
 }
@@ -602,15 +602,6 @@ figure {
   margin-top: 0.6rem;
 }
 
-/*破棄予定　前のJSの設定
-#popup-title {
-  margin-top: 0.8rem;
-  font-size: 1.5rem;
-  font-weight: bold;  
-  text-align: center;
-}
-*/
-
 /* ×ボタン設定 */
 .close-btn {
   position: absolute;
@@ -689,4 +680,62 @@ figure {
   font-size: 1.4rem;
   color: #3EB370;
   margin-top: 9rem; /* 上のセクションとの余白 */
+}
+
+
+
+@media (max-width: 1100px) {
+  /* スマホ・小型タブレット向けのレイアウト */
+.about-title {
+  font-size: 4.5rem;
+}
+
+/* trahearceの説明 */
+.about-a,
+.about-b,
+.about-c {
+  font-size: 2.2rem;
+}
+
+.brand-a,
+.brand-b,
+.brand-c,
+.brand-d,
+.brand-e,
+.brand-f {
+  font-size: 2.2rem;
+}
+
+.topic-list {
+  font-size: 2.2rem;
+}
+
+.column-A,
+.column-B,
+.column-C {
+  font-size: 3.5rem ;
+}
+
+.column-a,
+.column-b,
+.column-c {
+  font-size: 2rem;
+}
+
+/* フッター */
+.footer-links,
+.footer-information {
+  list-style: none;
+  display: flex;
+  flex-direction: column; /* これを残す！ */
+  align-items: flex-start;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-links a {
+  margin-left: 30rem;
+}
+
 }
