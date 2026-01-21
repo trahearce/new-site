@@ -684,7 +684,7 @@ figure {
 
 
 
-@media (max-width: 1179px) {
+@media (max-width: 1080px) {
   /* スマホ・小型タブレット向けのレイアウト */
 .about-title {
   font-size: 4.5rem;
