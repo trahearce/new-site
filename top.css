@@ -710,6 +710,16 @@ figure {
   font-size: 2.2rem;
 }
 
+.column-photo2 {
+  float: right;
+  width: 38%;
+  height: auto;
+  padding-left: 8rem;
+  padding-right: 6rem;
+  margin-bottom: 10rem;
+}
+
+
 .column-A,
 .column-B,
 .column-C {
