@@ -215,7 +215,7 @@ main {
 
 .item_photo {
   margin: 14.85rem 5rem;
-  margin-right: 9rem;
+  margin-right: 7rem;
   width: 450px;
   height: 450px;
   overflow: visible;
@@ -338,4 +338,5 @@ main {
   cursor: pointer;
   font-size: 17px;
   font-family: "Yu Gothic", "YuGothic", sans-serif;
+
 }
