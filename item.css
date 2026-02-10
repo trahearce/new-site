@@ -331,7 +331,7 @@ main {
 }
 
 .cart {
-  padding: 10px 70px;
+  padding: 10px 50px;
   background-color: #3f3d3d;
   color: #FFFFFF;
   border: none;
@@ -340,4 +340,5 @@ main {
   font-family: "Yu Gothic", "YuGothic", sans-serif;
 
 }
+
 
